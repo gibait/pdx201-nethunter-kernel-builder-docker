@@ -21,7 +21,8 @@ RUN cd /kernel && \
             git clone https://github.com/lineageos-on-pdx201/android_kernel_sony_sm6125 -b lineage-20
 
 # Clone nethunter-installer
-RUN git clone https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-project/-/tree/master/nethunter-installer /kernel/
+RUN git clone https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-project/-/tree/master/nethunter-installer \
+            /kernel/android_kernel_sony_sm6125/
 
 # Install Oh My Zsh!
 RUN sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)" || true
